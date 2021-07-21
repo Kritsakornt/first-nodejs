@@ -7,6 +7,14 @@ app.use(express.urlencoded({extended: true}));
 
 require('./routes')(app)
 
+app.get('/factorial', function(req,res){
+    res.send('Number : ');
+})
+
+ app.get('/factorial:num', function(req,res){
+     res.send('Number : ' + req.params.num);
+ })
+
 // app.get('/status', function(req,res){
 //     res.send('Hello nodejs server');
 // })
@@ -15,8 +23,6 @@ require('./routes')(app)
 //     console.log('hello -'+req.params.person);
 //     res.send('say hello with ' + req.params.person);
 // })
-
-
 
 let port = 8081;
 app.listen(port, function(){

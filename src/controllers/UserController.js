@@ -19,6 +19,10 @@ module.exports = {
 }
 
 
+   // app.get('/factorial/:userId', function(req,res){
+ //     res.send('ดูข้อมูลผู้ใช้งาน' + req.params.userId);
+//    })
+
 // //show
 // app.get('/user/:userId', function(req,res){
 //     res.send('ดูข้อมูลผู้ใช้งาน' + req.params.userId);
